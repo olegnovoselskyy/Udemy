@@ -14,6 +14,32 @@
 
     
     <style>
+            /* Sticky footer!!!! */
+            html {
+                height: 100%;
+                box-sizing: border-box;
+            }
+            *,
+            *:before,
+            *:after {
+            box-sizing: inherit;
+            }
+            body {
+                position: relative;
+                margin: 0;
+                padding-bottom: 6rem;
+                min-height: 100%;
+                font-family: "Helvetica Neue", Arial, sans-serif;
+                }
+
+            footer {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                padding: 1rem;  
+            }
+            /* End of sticky footer */
             #header {
                 background: url("img/earth-at-night.jpeg") center center / cover no-repeat;
             }
@@ -22,6 +48,7 @@
             .btn-block {
                 margin-top: 0 !important; 
             }
+
         </style>
 
     <title>Patterns Project</title>
@@ -48,9 +75,46 @@
             </div>
         </div>
     </div>
-    <div>this is a test </div>
-    <h3><strong>This is another test</strong></h3>
-    <h3><strong>This is another test</strong></h3>
+
+    <section id="gallery" class="mb-5">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col 4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/pattern1.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">The first image in my patterns project.</p>
+                                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                                <a href="#" class="btn btn-sm btn-outline-danger"><i class="far fa-heart"></i></a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col 4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/pattern2.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">The second image in my patterns project.</p>
+                                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                                <a href="#" class="btn btn-sm btn-outline-danger"><i class="far fa-heart"></i></a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col 4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/pattern3.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">The third image in my patterns project.</p>
+                                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                                <a href="#" class="btn btn-sm btn-outline-danger"><i class="far fa-heart"></i></a>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -58,4 +122,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+  <footer class="bg-dark text-white text-center">
+        <div>Footer</div>
+    </footer>
 </html>
